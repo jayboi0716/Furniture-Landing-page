@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1rem;
+    font-family: 'Lora', sans-serif;
+}
+.container-major{
+    max-width: 700px;
+    width: 90%;
+    margin: 10% auto;
+    border: 1px solid grey;
+}
+main{
+    display: flex;
+}
+.main-post{
+    background-image: url(images/chair-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    display: block;
+    height: 200px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 1em 0;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    margin-left: .5em;
+}
+aside{
+    width: 40%;
+    background-color: white;
+    padding: 0 1em ;
+}
+h3{
+    text-align:center ;
+    padding-top: .5em;
+}
+.text{
+    margin:.3em 0;
+    font-size: .79rem;
+    padding-top: .5em;
+}
+.arrow-div{
+    display: flex;
+    align-items: center;
+}
+.shop-text{
+    font-size: .9rem;
+    font-weight: bolder;
+}
+.arrow{
+    font-size: 2em;
+    margin-left: 1em;
+}
+.arrow-btn{
+    font-size: 1rem;
+    padding: .2em .75em;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: -1em;
+}
+.recent-post{
+    display: flex;
+}
+.sitting-room-deco{
+    background-image: url(images/chair-2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 200px;
+}
+.dinning-room-deco{
+    background-image: url(images/chair-2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 200px;
+}
+.about-furniture{
+    width: 40%;
+    background-color: white;
+    padding: 1em;
+    
+}
+h4{
+    text-align: center;
+}
+@media(max-width:600px){
+    main, .recent-post, aside, .main-post{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+}
+@media(max-width:600px){
+    .about-furniture, .sitting-room-deco, .dinning-room-deco{
+        width: 100%;
+    }
+    
+}
